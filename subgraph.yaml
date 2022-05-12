@@ -8,9 +8,9 @@ schema:
 dataSources:
   - kind: ethereum/contract
     name: ENSRegistry
-    network: mainnet
+    network: xinfin-apothem
     source:
-      address: '0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e'
+      address: '0x2a09F35fFf70B02aFc697fEa63Cd464ac634CE1f'
       abi: EnsRegistry
     mapping:
       kind: ethereum/events
@@ -35,9 +35,9 @@ dataSources:
           handler: handleNewTTL
   - kind: ethereum/contract
     name: ENSRegistryOld
-    network: mainnet
+    network: xinfin-apothem
     source:
-      address: '0x314159265dd8dbb310642f98f50c066173c1259b'
+      address: '0x253A7DCECe9f43597A1d8521FfB72F774f33bC34'
       abi: EnsRegistry
     mapping:
       kind: ethereum/events
@@ -62,7 +62,7 @@ dataSources:
           handler: handleNewTTLOldRegistry
   - kind: ethereum/contract
     name: Resolver
-    network: mainnet
+    network: xinfin-apothem
     source:
       abi: Resolver
     mapping:
@@ -106,9 +106,9 @@ dataSources:
           handler: handleTextChanged
   - kind: ethereum/contract
     name: BaseRegistrar
-    network: mainnet
+    network: xinfin-apothem
     source:
-      address: '0x57f1887a8BF19b14fC0dF6Fd9B2acc9Af147eA85'
+      address: '0x327a301820fb00fe6C606Ec4CBE606354a40967A'
       abi: BaseRegistrar
     mapping:
       kind: ethereum/events
@@ -132,9 +132,9 @@ dataSources:
           handler: handleNameTransferred
   - kind: ethereum/contract
     name: EthRegistrarController
-    network: mainnet
+    network: xinfin-apothem
     source:
-      address: '0x283Af0B28c62C092C9727F1Ee09c02CA627EB7F5'
+      address: '0xcdC6F27eF9481E5584f0BC41DC173203bC849e26'
       abi: EthRegistrarController
     mapping:
       kind: ethereum/events
