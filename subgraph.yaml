@@ -10,7 +10,7 @@ dataSources:
     name: ENSRegistry
     network: xinfin-apothem
     source:
-      address: '0xaeEe96274a67E33ceF1AfdeDeAD9058C49948f64'
+      address: '0xffeB2473850C22c90B7c1ccd91ba57e39aC48c48'
       abi: EnsRegistry
     mapping:
       kind: ethereum/events
@@ -37,7 +37,7 @@ dataSources:
     name: ENSRegistryOld
     network: xinfin-apothem
     source:
-      address: '0x862D805b2a174F5093d4aF759a232Ce0CDd6Ff78'
+      address: '0xd6265416Fa6362d7fB1E79bB6C598DF377C2f5aB'
       abi: EnsRegistry
     mapping:
       kind: ethereum/events
@@ -108,7 +108,7 @@ dataSources:
     name: BaseRegistrar
     network: xinfin-apothem
     source:
-      address: '0x354267E84F96b4d743Dbe36A14024FFe6D876f34'
+      address: '0x0E94711DF236f53e3CCC36d955b8195F946B165a'
       abi: BaseRegistrar
     mapping:
       kind: ethereum/events
@@ -134,7 +134,7 @@ dataSources:
     name: EthRegistrarController
     network: xinfin-apothem
     source:
-      address: '0x183eDD894e6C9809ddDfd9f1Bf0b98F396073dE6'
+      address: '0x15Ae20fb6d20CA1611589e89228a74C170b8db8D'
       abi: EthRegistrarController
     mapping:
       kind: ethereum/events
