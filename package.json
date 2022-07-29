@@ -1,7 +1,7 @@
 {
   "name": "ens-subgraph",
   "version": "1.0.2",
-  "repository": "https://github.com/ensdomains/ens-subgraph",
+  "repository": "https://github.com/yodaplus/xns-subgraph",
   "license": "MIT",
   "scripts": {
     "codegen": "graph codegen --output-dir src/types/",
@@ -27,7 +27,11 @@
     "setup-remote3": "npm run codegen && npm run create-remote3 && npm run deploy-remote3",
     "create-remote3": "graph create --node https://graph-node.yodaplus.net:8020/ xnsdomains/final-prod",
     "remove-remote3": "graph remove --node https://graph-node.yodaplus.net:8020/ xnsdomains/final-prod",
-    "deploy-remote3": "graph deploy --node https://graph-node.yodaplus.net:8020/ --ipfs https://graph-node.yodaplus.net:5001 xnsdomains/final-prod"
+    "deploy-remote3": "graph deploy --node https://graph-node.yodaplus.net:8020/ --ipfs https://graph-node.yodaplus.net:5001 xnsdomains/final-prod",
+    "setup-remote4": "npm run codegen && npm run create-remote4 && npm run deploy-remote4",
+    "create-remote4": "graph create --node https://graph-node.yodaplus.net:8020/ xnsdomains/xdc-mainnet",
+    "remove-remote4": "graph remove --node https://graph-node.yodaplus.net:8020/ xnsdomains/xdc-mainnet",
+    "deploy-remote4": "graph deploy --node https://graph-node.yodaplus.net:8020/ --ipfs https://graph-node.yodaplus.net:5001 xnsdomains/xdc-mainnet"
   },
   "devDependencies": {
     "@ensdomains/content-hash": "^2.5.3",
