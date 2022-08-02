@@ -29,9 +29,9 @@
     "remove-remote3": "graph remove --node https://graph-node.yodaplus.net:8020/ xnsdomains/final-prod",
     "deploy-remote3": "graph deploy --node https://graph-node.yodaplus.net:8020/ --ipfs https://graph-node.yodaplus.net:5001 xnsdomains/final-prod",
     "setup-remote4": "npm run codegen && npm run create-remote4 && npm run deploy-remote4",
-    "create-remote4": "graph create --node https://graph-node.yodaplus.net:8020/ xnsdomains/go-mainnet",
-    "remove-remote4": "graph remove --node https://graph-node.yodaplus.net:8020/ xnsdomains/go-mainnet",
-    "deploy-remote4": "graph deploy --node https://graph-node.yodaplus.net:8020/ --ipfs https://graph-node.yodaplus.net:5001 xnsdomains/go-mainnet"
+    "create-remote4": "graph create --node https://graph-node.yodaplus.net:8020/ xnsdomains/go-mainnet-test",
+    "remove-remote4": "graph remove --node https://graph-node.yodaplus.net:8020/ xnsdomains/go-mainnet-test",
+    "deploy-remote4": "graph deploy --node https://graph-node.yodaplus.net:8020/ --ipfs https://graph-node.yodaplus.net:5001 xnsdomains/go-mainnet-test"
   },
   "devDependencies": {
     "@ensdomains/content-hash": "^2.5.3",
