@@ -21,9 +21,9 @@
     "remove-remote": "graph remove --node https://graph-node-apothem.yodaplus.net:8020/ xnsdomains/xns-apothem",
     "deploy-remote": "graph deploy --node https://graph-node-apothem.yodaplus.net:8020/ --ipfs https://graph-node-apothem.yodaplus.net:5001 xnsdomains/xns-apothem",
     "setup-remote2": "npm run codegen && npm run create-remote2 && npm run deploy-remote2",
-    "create-remote2": "graph create --node https://graph-node-apothem.yodaplus.net:8020/ xnsdomains/xns-test",
-    "remove-remote2": "graph remove --node https://graph-node-apothem.yodaplus.net:8020/ xnsdomains/xns-test",
-    "deploy-remote2": "graph deploy --node https://graph-node-apothem.yodaplus.net:8020/ --ipfs https://graph-node-apothem.yodaplus.net:5001 xnsdomains/xns-test"
+    "create-remote2": "graph create --node http://18.189.195.18:8020/ xnsdomains/go-final-test1",
+    "remove-remote2": "graph remove --node http://18.189.195.18:8020/ xnsdomains/go-final-test1",
+    "deploy-remote2": "graph deploy --node http://18.189.195.18:8020/ --ipfs http://18.189.195.18:5001 xnsdomains/go-final-test1"
   },
   "devDependencies": {
     "@ensdomains/content-hash": "^2.5.3",
