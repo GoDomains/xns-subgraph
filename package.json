@@ -1,7 +1,7 @@
 {
-  "name": "ens-subgraph",
+  "name": "xns-subgraph",
   "version": "1.0.2",
-  "repository": "https://github.com/yodaplus/xns-subgraph",
+  "repository": "https://github.com/GoDomains/xns-subgraph",
   "license": "MIT",
   "scripts": {
     "codegen": "graph codegen --output-dir src/types/",
@@ -17,26 +17,14 @@
     "deploy": "graph deploy ensdomains/ens --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/",
     "watch-local": "graph deploy graphprotocol/ens --watch --debug --node http://127.0.0.1:8020/ --ipfs http://localhost:5001",
     "setup-remote": "npm run codegen && npm run create-remote && npm run deploy-remote",
-    "create-remote": "graph create --node https://graph-node-apothem.yodaplus.net:8020/ xnsdomains/xns-apothem",
-    "remove-remote": "graph remove --node https://graph-node-apothem.yodaplus.net:8020/ xnsdomains/xns-apothem",
-    "deploy-remote": "graph deploy --node https://graph-node-apothem.yodaplus.net:8020/ --ipfs https://graph-node-apothem.yodaplus.net:5001 xnsdomains/xns-apothem",
-    "setup-remote2": "npm run codegen && npm run create-remote2 && npm run deploy-remote2",
-    "create-remote2": "graph create --node https://graph-node-apothem.yodaplus.net:8020/ xnsdomains/xns-test",
-    "remove-remote2": "graph remove --node https://graph-node-apothem.yodaplus.net:8020/ xnsdomains/xns-test",
-    "deploy-remote2": "graph deploy --node https://graph-node-apothem.yodaplus.net:8020/ --ipfs https://graph-node-apothem.yodaplus.net:5001 xnsdomains/xns-test",
-    "setup-remote3": "npm run codegen && npm run create-remote3 && npm run deploy-remote3",
-    "create-remote3": "graph create --node https://graph-node.yodaplus.net:8020/ xnsdomains/final-prod",
-    "remove-remote3": "graph remove --node https://graph-node.yodaplus.net:8020/ xnsdomains/final-prod",
-    "deploy-remote3": "graph deploy --node https://graph-node.yodaplus.net:8020/ --ipfs https://graph-node.yodaplus.net:5001 xnsdomains/final-prod",
-    "setup-remote4": "npm run codegen && npm run create-remote4 && npm run deploy-remote4",
-    "create-remote4": "graph create --node https://graph-node.yodaplus.net:8020/ xnsdomains/go-mainnet-test",
-    "remove-remote4": "graph remove --node https://graph-node.yodaplus.net:8020/ xnsdomains/go-mainnet-test",
-    "deploy-remote4": "graph deploy --node https://graph-node.yodaplus.net:8020/ --ipfs https://graph-node.yodaplus.net:5001 xnsdomains/go-mainnet-test"
+    "create-remote": "graph create --node https://graph.icotokens.net/ godomains/xns-go",
+    "remove-remote": "graph remove --node https://graph.icotokens.net/ godomains/xns-go",
+    "deploy-remote": "graph deploy --node https://graph.icotokens.net/ --ipfs https://ipfs.icotokens.net/ godomains/xns-go"
   },
   "devDependencies": {
     "@ensdomains/content-hash": "^2.5.3",
-    "@graphprotocol/graph-cli": "^0.21.1",
-    "@graphprotocol/graph-ts": "^0.20.1"
+    "@graphprotocol/graph-cli": "^0.23.2",
+    "@graphprotocol/graph-ts": "^0.23.1"
   },
   "dependencies": {}
 }
